@@ -9,6 +9,7 @@ import Journey from "@/components/sections/Journey";
 import HowWeWork from "@/components/sections/HowWeWork";
 import Experience from "@/components/sections/Experience";
 import Capabilities from "@/components/sections/Capabilities";
+import Tools from "@/components/sections/Tools";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <HowWeWork />
         <Experience />
         <Capabilities />
+        <Tools />
       </main>
       <Footer />
     </>

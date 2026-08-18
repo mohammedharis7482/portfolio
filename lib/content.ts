@@ -320,6 +320,10 @@ export const capabilities = [
   },
 ];
 
+export const toolsSection = {
+  heading: "Tools I work with.",
+};
+
 export const tools = [
   { category: "Design", items: ["Figma"] },
   { category: "Frontend", items: ["Next.js", "React", "TypeScript", "JavaScript", "Tailwind CSS", "Shadcn UI"] },
