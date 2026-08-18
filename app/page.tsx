@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import SelectedWork from "@/components/sections/SelectedWork";
 import About from "@/components/sections/About";
 import FeaturedCaseStudy from "@/components/sections/FeaturedCaseStudy";
+import MoreWork from "@/components/sections/MoreWork";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <SelectedWork />
         <About />
         <FeaturedCaseStudy />
+        <MoreWork />
       </main>
       <Footer />
     </>

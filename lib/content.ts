@@ -132,6 +132,11 @@ export const caseStudy = {
   },
 };
 
+export const moreWork = {
+  heading: "More Work",
+  body: "Additional projects, concepts and client work spanning product design, frontend and full-stack development.",
+};
+
 export const moreProjects = [
   {
     category: "EDTECH • AI • FULL-STACK",
