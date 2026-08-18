@@ -145,6 +145,8 @@ Verified visually: each crop line sits flush against the app's own header, not t
 
 Deliberately **not** cropped, since they carry no browser chrome: `gcc/site-hero.png`, `gcc/site-gallery.png`, `gcc/add-players-mobile.jpeg`, and all `propertyflow/*.png`.
 
+The uncropped originals are preserved in `docs/source-images/` (outside `public/`, so they are never served) — re-crop from those rather than from an already-cropped file.
+
 The `width`/`height` values on each image in `lib/content.ts` were updated to the post-crop dimensions. **If any image is ever re-cropped or replaced, update those numbers too** — `next/image` uses them to reserve layout space, so a stale value reintroduces layout shift.
 
 ### Hero visual override — abstract illustration (supersedes master-prompt §17–18)
