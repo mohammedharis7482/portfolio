@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import Container from "../Container";
 import { capabilities, capabilitiesSection } from "@/lib/content";
 
@@ -37,19 +36,21 @@ export default function Capabilities() {
               {/* Inline rather than pills — spec §61 cautions against badge overload */}
               <p className="flex flex-wrap items-baseline gap-x-[var(--space-3)] gap-y-[var(--space-2)] md:col-span-8">
                 {capability.items.map((item, index) => (
-                  <Fragment key={item}>
-                    {index > 0 && (
+                  <span
+                    key={item}
+                    className="text-[15px] leading-[1.5] text-[var(--color-text-secondary)]"
+                  >
+                    {item}
+                    {/* separator travels with its item so it never starts a line */}
+                    {index < capability.items.length - 1 && (
                       <span
                         aria-hidden="true"
-                        className="text-[var(--color-text-muted)]"
+                        className="ml-[var(--space-3)] text-[var(--color-text-muted)]"
                       >
                         ·
                       </span>
                     )}
-                    <span className="text-[15px] leading-[1.5] text-[var(--color-text-secondary)]">
-                      {item}
-                    </span>
-                  </Fragment>
+                  </span>
                 ))}
               </p>
             </li>

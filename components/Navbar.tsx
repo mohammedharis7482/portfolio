@@ -58,7 +58,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className="md:hidden p-2"
+            className="md:hidden -mr-2 flex min-h-[44px] min-w-[44px] items-center justify-center"
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
@@ -75,13 +75,13 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-[var(--color-border)]">
           <Container>
-            <div className="flex flex-col py-5 gap-4">
+            <div className="flex flex-col py-4 gap-1">
               {nav.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
                   onClick={() => setMenuOpen(false)}
-                  className="text-[16px] text-[var(--color-text-primary)]"
+                  className="flex min-h-[44px] items-center text-[16px] text-[var(--color-text-primary)]"
                 >
                   {item.label}
                 </a>

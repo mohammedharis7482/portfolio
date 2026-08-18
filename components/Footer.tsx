@@ -33,7 +33,7 @@ export default function Footer() {
 
           <div className="flex gap-16">
             <div>
-              <p className="text-micro text-gray-500 mb-4">Navigate</p>
+              <p className="text-micro text-gray-400 mb-4">Navigate</p>
               <ul className="flex flex-col gap-3">
                 {navigate.map((item) => (
                   <li key={item.href}>
@@ -48,7 +48,7 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <p className="text-micro text-gray-500 mb-4">Elsewhere</p>
+              <p className="text-micro text-gray-400 mb-4">Elsewhere</p>
               <ul className="flex flex-col gap-3">
                 {elsewhere.map((item) => (
                   <li key={item.label}>
@@ -69,7 +69,7 @@ export default function Footer() {
 
         <hr className="border-white/10" />
 
-        <div className="flex flex-col sm:flex-row justify-between gap-2 pt-6 text-[13px] text-gray-500">
+        <div className="flex flex-col sm:flex-row justify-between gap-2 pt-6 text-[13px] text-gray-400">
           <p>{footer.copyright}</p>
           <p>{footer.location}</p>
         </div>
