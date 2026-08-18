@@ -8,6 +8,7 @@ import MoreWork from "@/components/sections/MoreWork";
 import Journey from "@/components/sections/Journey";
 import HowWeWork from "@/components/sections/HowWeWork";
 import Experience from "@/components/sections/Experience";
+import Capabilities from "@/components/sections/Capabilities";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Journey />
         <HowWeWork />
         <Experience />
+        <Capabilities />
       </main>
       <Footer />
     </>

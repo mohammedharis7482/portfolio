@@ -287,6 +287,11 @@ export const experience: ExperienceItem[] = [
   },
 ];
 
+export const capabilitiesSection = {
+  eyebrow: "CAPABILITIES",
+  heading: "Design, engineering and product — end to end.",
+};
+
 export const capabilities = [
   {
     num: "01",
