@@ -126,6 +126,27 @@ public/images/
     └── admin-dashboard.png
 ```
 
+### Browser chrome — cropped (complete)
+
+Eight screenshots were captured with macOS browser chrome (traffic lights, tab strip, address bar) visible. That chrome has been cropped off from the top; full width and all remaining height were kept, and nothing was resized or rescaled.
+
+| File | Cropped from top | Result |
+|---|---|---|
+| `gcc/matches-admin.jpeg` | 132px | 2560×1468 |
+| `gcc/registration.jpeg` | 118px | 2560×1482 |
+| `gcc/bracket.jpeg` | 132px | 2560×1468 |
+| `nexapos/dashboard.jpeg` | 68px | 2560×1471 |
+| `nexapos/billing.jpeg` | 68px | 2560×1475 |
+| `nexapos/products.jpeg` | 68px | 2560×1471 |
+| `nexapos/reports.jpeg` | 68px | 2560×1469 |
+| `nexapos/receipt.jpeg` | 68px | 2560×1468 |
+
+Verified visually: each crop line sits flush against the app's own header, not through a logo or nav row.
+
+Deliberately **not** cropped, since they carry no browser chrome: `gcc/site-hero.png`, `gcc/site-gallery.png`, `gcc/add-players-mobile.jpeg`, and all `propertyflow/*.png`.
+
+The `width`/`height` values on each image in `lib/content.ts` were updated to the post-crop dimensions. **If any image is ever re-cropped or replaced, update those numbers too** — `next/image` uses them to reserve layout space, so a stale value reintroduces layout shift.
+
 ### Hero visual override — abstract illustration (supersedes master-prompt §17–18)
 
 **Deliberate, per explicit instruction. Do not "fix" this back to screenshots.**
