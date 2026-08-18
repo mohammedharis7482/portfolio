@@ -71,8 +71,10 @@ export function SectionHeading({
       </h2>
       {body && (
         <p
-          className={`text-body-lg mt-5 ${
-            dark ? "text-gray-300" : ""
+          className={`mt-5 ${
+            dark
+              ? "text-[19px] leading-[1.6] text-gray-300"
+              : "text-body-lg"
           }`}
         >
           {body}

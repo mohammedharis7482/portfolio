@@ -31,6 +31,13 @@ export const hero = {
     "Currently exploring full-time opportunities in Qatar & the GCC, while available for selected freelance projects and product collaborations.",
 };
 
+export const selectedWork = {
+  heading: "Selected Work",
+  body: "A selection of digital products, platforms and experiences I've designed and built across SaaS, business software, sports technology, real estate, education and ecommerce.",
+  cta: "View Case Study",
+  liveCta: "Live Site",
+};
+
 export type Project = {
   slug: string;
   order: string;
@@ -102,6 +109,28 @@ export const featuredProjects: Project[] = [
     ],
   },
 ];
+
+export const caseStudy = {
+  eyebrow: "FEATURED CASE STUDY",
+  labels: {
+    project: "PROJECT",
+    role: "ROLE",
+    interfaces: "INTERFACES",
+  },
+  interfaces: [
+    "Registration",
+    "Player management",
+    "Tournament dashboard",
+    "Fixtures",
+    "Knockout bracket",
+    "Admin",
+  ],
+  // Paths resolve against featuredProjects[0].images so alt text is not duplicated
+  showcase: {
+    large: "/images/gcc/matches-admin.jpeg",
+    small: ["/images/gcc/registration.jpeg", "/images/gcc/bracket.jpeg"],
+  },
+};
 
 export const moreProjects = [
   {

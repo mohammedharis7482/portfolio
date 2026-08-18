@@ -53,7 +53,7 @@ export default function Navbar() {
               {site.availability}
             </span>
             <Button href="#contact" variant="dark">
-              Let's Talk →
+              Let&apos;s Talk →
             </Button>
           </div>
 
@@ -91,7 +91,7 @@ export default function Navbar() {
                 {site.availability}
               </span>
               <Button href="#contact" variant="dark" className="w-full mt-1">
-                Let's Talk →
+                Let&apos;s Talk →
               </Button>
             </div>
           </Container>
