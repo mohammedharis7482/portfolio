@@ -10,7 +10,7 @@ export default function Experience() {
     >
       <Container>
         <div className="max-w-[680px]">
-          <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent)]">
+          <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent-dark)]">
             {experienceSection.eyebrow}
           </p>
           <h2 className="text-section text-[var(--color-text-primary)]">
@@ -29,11 +29,11 @@ export default function Experience() {
                   <h3 className="text-subheading text-[var(--color-text-primary)]">
                     {item.role}
                   </h3>
-                  <p className="mt-[var(--space-1)] text-[15px] leading-[1.5] text-[var(--color-text-muted)]">
+                  <p className="mt-[var(--space-1)] text-[15px] leading-[1.5] text-[var(--color-text-muted-accessible)]">
                     {item.company} — {item.location}
                   </p>
                 </div>
-                <p className="text-[14px] leading-[1.5] text-[var(--color-text-muted)] md:shrink-0 md:text-right">
+                <p className="text-[14px] leading-[1.5] text-[var(--color-text-muted-accessible)] md:shrink-0 md:text-right">
                   {item.dates}
                 </p>
               </div>

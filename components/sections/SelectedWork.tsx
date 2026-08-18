@@ -38,11 +38,11 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           }`}
         >
           <div className="flex items-center gap-[var(--space-3)]">
-            <span className="text-micro text-[var(--color-text-muted)]">
+            <span className="text-micro text-[var(--color-text-muted-accessible)]">
               {project.order}
             </span>
             <span className="h-px w-6 bg-[var(--color-border)]" />
-            <span className="text-micro text-[var(--color-accent)]">
+            <span className="text-micro text-[var(--color-accent-dark)]">
               {project.category}
             </span>
           </div>
@@ -66,7 +66,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           <div className="mt-[var(--space-6)] flex flex-wrap items-center gap-x-[var(--space-6)] gap-y-[var(--space-3)]">
             <Link
               href={`/work/${project.slug}`}
-              className="inline-flex items-center gap-2 text-[15px] font-medium text-[var(--color-accent)] transition-colors duration-200 hover:text-[var(--color-accent-dark)]"
+              className="inline-flex items-center gap-2 text-[15px] font-medium text-[var(--color-accent-dark)] transition-all duration-200 hover:brightness-75"
             >
               {selectedWork.cta}
               <span

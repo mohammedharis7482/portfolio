@@ -7,7 +7,7 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/mohammed-haris-178332325/",
     github: "https://github.com/mohammedharis7482",
     behance: "https://www.behance.net/mohdharis21",
-    resume: "#", // updated once resume file is generated
+    resume: "/resume/Mohammed_Haris_Resume.docx",
   },
   availability: "Open to Work",
 };

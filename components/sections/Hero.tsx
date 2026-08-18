@@ -15,7 +15,7 @@ export default function Hero() {
       <Container className="relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-[620px]">
-            <p className="text-micro text-[var(--color-accent)] mb-6">
+            <p className="text-micro text-[var(--color-accent-dark)] mb-6">
               {hero.eyebrow}
             </p>
             <h1 className="text-hero text-[var(--color-text-primary)]">
@@ -30,7 +30,7 @@ export default function Hero() {
                 {hero.ctaSecondary}
               </Button>
             </div>
-            <p className="flex items-start gap-2 text-[14px] text-[var(--color-text-muted)] mt-8 max-w-[480px]">
+            <p className="flex items-start gap-2 text-[14px] text-[var(--color-text-muted-accessible)] mt-8 max-w-[480px]">
               <span className="h-2 w-2 rounded-full bg-[var(--color-accent)] mt-1.5 flex-shrink-0" />
               {hero.availabilityNote}
             </p>
