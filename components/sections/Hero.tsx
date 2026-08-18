@@ -1,12 +1,18 @@
-import Image from "next/image";
 import Container from "../Container";
 import Button from "../Button";
+import HeroIllustration from "./HeroIllustration";
 import { hero } from "@/lib/content";
 
 export default function Hero() {
   return (
-    <section className="bg-[var(--color-bg-primary)] pt-[140px] pb-[80px] md:pt-[160px] md:pb-[96px]">
-      <Container>
+    <section className="relative overflow-hidden bg-[var(--color-bg-primary)] pt-[140px] pb-[80px] md:pt-[160px] md:pb-[96px]">
+      {/* Grid backdrop sits on its own layer — the utility carries opacity */}
+      <div
+        aria-hidden="true"
+        className="bg-grid-subtle pointer-events-none absolute inset-0 z-0"
+      />
+
+      <Container className="relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-[620px]">
             <p className="text-micro text-[var(--color-accent)] mb-6">
@@ -30,27 +36,8 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="relative">
-            <div className="absolute -inset-8 bg-[var(--color-accent)]/5 rounded-[var(--radius-2xl)] blur-2xl -z-10" />
-            <div className="rounded-[var(--radius-xl)] overflow-hidden border border-[var(--color-border)] shadow-[var(--shadow-elevated)] bg-white">
-              <Image
-                src="/images/gcc/site-hero.png"
-                alt="GCC Chalissery Football Academy platform interface"
-                width={1200}
-                height={800}
-                className="w-full h-auto"
-                priority
-              />
-            </div>
-            <div className="hidden sm:block absolute -bottom-8 -left-8 w-[45%] rounded-[var(--radius-lg)] overflow-hidden border border-[var(--color-border)] shadow-[var(--shadow-soft)] bg-white">
-              <Image
-                src="/images/nexapos/dashboard.jpeg"
-                alt="NexaPOS dashboard interface"
-                width={600}
-                height={400}
-                className="w-full h-auto"
-              />
-            </div>
+          <div className="w-full">
+            <HeroIllustration />
           </div>
         </div>
       </Container>

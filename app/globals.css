@@ -82,3 +82,12 @@ body {
 .text-body { font-size: 17px; line-height: 1.65; color: var(--color-text-secondary); }
 .text-small { font-size: 14px; line-height: 1.4; color: var(--color-text-muted); }
 .text-micro { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+
+/* Hero grid backdrop — see CLAUDE.md §17 hero-visual override */
+.bg-grid-subtle {
+  background-image:
+    linear-gradient(to right, var(--color-border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-border) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.4;
+}

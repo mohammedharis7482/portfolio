@@ -126,6 +126,16 @@ public/images/
     └── admin-dashboard.png
 ```
 
+### Hero visual override — abstract illustration (supersedes master-prompt §17–18)
+
+**Deliberate, per explicit instruction. Do not "fix" this back to screenshots.**
+
+The Hero visual is an abstract SVG (`components/sections/HeroIllustration.tsx`) plus a `.bg-grid-subtle` backdrop — *not* real product screenshots. The two real screenshots that previously sat in the Hero (GCC `site-hero.png`, NexaPOS `dashboard.jpeg`) were removed from that section only.
+
+Master-prompt §17–18 ("real screenshots, never generic illustration") **still governs everywhere else** — Selected Work, Featured Case Study, More Work and the case study pages all keep real screenshots, and both images above are still used in those sections. This override is scoped to the Hero visual alone.
+
+The illustration's fills are hardcoded hex values supplied verbatim with the instruction, which is a deliberate exception to §3's "never hardcode a hex" rule. It also introduces one colour outside the token set — `#D3D8D4`, used for the muted chart bars and control circles. Leave the shapes, colours and layout as they are unless told otherwise.
+
 **Not yet available:** screenshots for MathBot, Odrowita, Maison Élève, PlaySphere, Turf Booking App, Baladna Offer Mart, Technical Debt Framework. These live in the "More Work" section as text-only editorial rows (spec §28 already treats this section as lightweight — no card imagery required). If screenshots arrive later, upgrade that section to include thumbnails.
 
 ---
@@ -147,7 +157,8 @@ components/
 ├── Navbar.tsx             — scroll-aware, mobile menu, "Open to Work" badge, Let's Talk CTA
 ├── Footer.tsx             — dark footer, real social links
 └── sections/            — DONE: all 12 homepage sections built
-    ├── Hero.tsx           — uses real GCC + NexaPOS screenshots as hero visual
+    ├── Hero.tsx           — abstract illustration + grid backdrop (override, see §5)
+    ├── HeroIllustration.tsx — abstract dashboard SVG used by Hero
     ├── SelectedWork.tsx   — 3 featured project cards (GCC, NexaPOS, PropertyFlow)
     ├── About.tsx          — portrait + copy + 3 pillars
     ├── FeaturedCaseStudy.tsx — dark section, GCC Chalissery deep dive
