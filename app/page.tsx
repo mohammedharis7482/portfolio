@@ -12,6 +12,7 @@ import Capabilities from "@/components/sections/Capabilities";
 import Tools from "@/components/sections/Tools";
 import Career from "@/components/sections/Career";
 import FreelanceCta from "@/components/sections/FreelanceCta";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <Tools />
         <Career />
         <FreelanceCta />
+        <Contact />
       </main>
       <Footer />
     </>
