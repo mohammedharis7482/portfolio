@@ -10,6 +10,8 @@ import HowWeWork from "@/components/sections/HowWeWork";
 import Experience from "@/components/sections/Experience";
 import Capabilities from "@/components/sections/Capabilities";
 import Tools from "@/components/sections/Tools";
+import Career from "@/components/sections/Career";
+import FreelanceCta from "@/components/sections/FreelanceCta";
 
 export default function Home() {
   return (
@@ -26,6 +28,8 @@ export default function Home() {
         <Experience />
         <Capabilities />
         <Tools />
+        <Career />
+        <FreelanceCta />
       </main>
       <Footer />
     </>
