@@ -241,7 +241,8 @@ Section background rhythm (spec §59): Light -> White -> Soft Gray -> Dark -> Wh
 
 ## 8. Outstanding Items / Do Not Guess
 
-- **Resume file** — not built yet. When built, update `site.links.resume` in `lib/content.ts` to point to the real file, and update the "View Resume" CTA in the Career section.
+- **Resume** — `public/resume/Mohammed_Haris_Resume.docx` exists and is live: `site.links.resume` points at it, feeding both the Career "View Resume" CTA and the footer "Resume" link.
+- **Resume PDF is currently invalid** — `public/resume/Mohammed_Haris_Resume.pdf` is a byte-identical copy of the `.docx` with a `.pdf` extension (same MD5), not a real PDF. Served as `application/pdf`, so the browser's PDF viewer fails with "Failed to load PDF document". **Do not point `site.links.resume` at it.** Once a genuine PDF export replaces that file, switch the link to it — a PDF previews in-browser where a `.docx` forces a download — and consider offering the `.docx` as a small secondary link in the Career card.
 - **NexaPOS live URL** — none yet. Do not add a live-site link for this project.
 - **More Work screenshots** — none yet for the 7 secondary projects. Keep that section text-only until assets arrive.
 - **Case study depth** — the 3 case study pages are built, but carry only hero/overview/visuals/tech. Problem, research, strategy, challenges and outcome sections stay omitted until real material exists for them.

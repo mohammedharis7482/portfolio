@@ -1,5 +1,0 @@
-Drop Mohammed_Haris_Resume.docx here.
-
-site.links.resume in lib/content.ts points at /resume/Mohammed_Haris_Resume.docx,
-which is served from this folder. The filename must match exactly, or the
-Career "View Resume" and footer "Resume" links will 404.
