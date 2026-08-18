@@ -31,6 +31,13 @@ export const hero = {
     "Currently exploring full-time opportunities in Qatar & the GCC, while available for selected freelance projects and product collaborations.",
 };
 
+export const selectedWork = {
+  heading: "Selected Work",
+  body: "A selection of digital products, platforms and experiences I've designed and built across SaaS, business software, sports technology, real estate, education and ecommerce.",
+  cta: "View Case Study",
+  liveCta: "Live Site",
+};
+
 export type Project = {
   slug: string;
   order: string;
