@@ -59,7 +59,7 @@ export const featuredProjects: Project[] = [
     title: "GCC Chalissery Football Academy",
     headline: "Turning tournament operations into a connected digital experience.",
     description:
-      "A centralized tournament and academy management platform designed to simplify team registration, player management, approvals, fixtures, results and tournament operations.",
+      "A centralized tournament and academy management platform — including a public academy website and a mobile-optimized registration experience — designed to simplify team registration, player management, approvals, fixtures, results and tournament operations.",
     role: "Product Design • UI/UX • Frontend • Backend Architecture • Product Strategy",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Django REST Framework", "PostgreSQL", "PWA"],
     liveUrl: "https://gccacademy.in/",
@@ -118,7 +118,9 @@ export const caseStudy = {
     interfaces: "INTERFACES",
   },
   interfaces: [
+    "Public website",
     "Registration",
+    "Mobile registration",
     "Player management",
     "Tournament dashboard",
     "Fixtures",
