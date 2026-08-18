@@ -270,19 +270,19 @@ export const experience: ExperienceItem[] = [
   {
     role: "Freelance Product Designer",
     company: "Self Employed",
-    location: "Remote — Qatar client",
+    location: "Remote — Helpdesk Qatar",
     dates: "December 2025 – Present",
     description:
       "Working remotely with a Qatar-based client on design and product-related work, applying UI/UX and product thinking to a real business context.",
     tags: ["UI/UX", "Freelance", "Remote", "Product Design"],
   },
   {
-    role: "UI/UX Designer",
+    role: "UI/UX Design Intern",
     company: "Aspira Design",
     location: "Bengaluru, Karnataka, India",
     dates: "July 2025 – March 2026",
     description:
-      "Worked as a UI/UX Designer contributing to interface design, user experience and design system work.",
+      "Worked as a UI/UX Design Intern, contributing to interface design, user experience and design system work under guidance from the design team.",
     tags: ["UI/UX", "UI Design", "UX Design"],
   },
 ];
@@ -325,7 +325,7 @@ export const toolsSection = {
 };
 
 export const tools = [
-  { category: "Design", items: ["Figma"] },
+  { category: "Design", items: ["Figma", "Adobe Photoshop", "Adobe Illustrator"] },
   { category: "Frontend", items: ["Next.js", "React", "TypeScript", "JavaScript", "Tailwind CSS", "Shadcn UI"] },
   { category: "Backend", items: ["Django", "Django REST Framework", "Python"] },
   { category: "Database", items: ["PostgreSQL"] },
