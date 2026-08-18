@@ -6,6 +6,7 @@ import About from "@/components/sections/About";
 import FeaturedCaseStudy from "@/components/sections/FeaturedCaseStudy";
 import MoreWork from "@/components/sections/MoreWork";
 import Journey from "@/components/sections/Journey";
+import HowWeWork from "@/components/sections/HowWeWork";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <FeaturedCaseStudy />
         <MoreWork />
         <Journey />
+        <HowWeWork />
       </main>
       <Footer />
     </>

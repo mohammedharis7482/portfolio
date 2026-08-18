@@ -222,6 +222,11 @@ export const journey = {
   stages: ["UI/UX", "Frontend", "Full-Stack", "Product Development", "SaaS / AI"],
 };
 
+export const howIWork = {
+  eyebrow: "HOW I WORK",
+  heading: "From problem to product.",
+};
+
 export const process = [
   { num: "01", title: "Understand", description: "Understand users, business objectives, constraints and the actual problem." },
   { num: "02", title: "Define", description: "Structure requirements, user flows, information architecture and technical considerations." },
