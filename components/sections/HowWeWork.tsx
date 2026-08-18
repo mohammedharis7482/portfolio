@@ -6,7 +6,7 @@ export default function HowWeWork() {
     <section className="bg-[var(--color-bg-surface)] py-[var(--space-10)] md:py-[var(--space-12)] lg:py-[var(--space-13)]">
       <Container>
         <div className="max-w-[680px]">
-          <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent)]">
+          <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent-dark)]">
             {howIWork.eyebrow}
           </p>
           <h2 className="text-section text-[var(--color-text-primary)]">
@@ -29,7 +29,7 @@ export default function HowWeWork() {
                 />
               )}
 
-              <span className="absolute top-0 left-0 flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full border border-[var(--color-accent)] bg-[var(--color-bg-surface)] text-[11px] font-semibold text-[var(--color-accent)] lg:static lg:translate-x-0">
+              <span className="absolute top-0 left-0 flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full border border-[var(--color-accent)] bg-[var(--color-bg-surface)] text-[11px] font-semibold text-[var(--color-accent-dark)] lg:static lg:translate-x-0">
                 {stage.num}
               </span>
 

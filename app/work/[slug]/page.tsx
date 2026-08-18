@@ -84,11 +84,11 @@ export default async function CaseStudyPage({ params }: Params) {
             </Link>
 
             <div className="mt-[var(--space-7)] flex items-center gap-[var(--space-3)]">
-              <span className="text-micro text-[var(--color-text-muted)]">
+              <span className="text-micro text-[var(--color-text-muted-accessible)]">
                 {project.order}
               </span>
               <span className="h-px w-6 bg-[var(--color-border)]" />
-              <span className="text-micro text-[var(--color-accent)]">
+              <span className="text-micro text-[var(--color-accent-dark)]">
                 {project.category}
               </span>
             </div>
@@ -106,7 +106,7 @@ export default async function CaseStudyPage({ params }: Params) {
         <section className="bg-[var(--color-bg-surface)] py-[var(--space-10)] md:py-[var(--space-12)]">
           <Container>
             <div className="grid gap-[var(--space-5)] md:grid-cols-12 md:gap-[var(--space-7)]">
-              <h2 className="text-micro text-[var(--color-accent)] md:col-span-3">
+              <h2 className="text-micro text-[var(--color-accent-dark)] md:col-span-3">
                 Overview
               </h2>
               <p className="text-body-lg md:col-span-9 md:max-w-[760px]">
@@ -144,14 +144,14 @@ export default async function CaseStudyPage({ params }: Params) {
           <Container>
             <div className="grid gap-[var(--space-7)] md:grid-cols-2 md:gap-[var(--space-9)]">
               <div>
-                <h2 className="text-micro text-[var(--color-accent)]">
+                <h2 className="text-micro text-[var(--color-accent-dark)]">
                   {caseStudy.labels.role}
                 </h2>
                 <p className="text-body mt-[var(--space-4)]">{project.role}</p>
               </div>
 
               <div>
-                <h2 className="text-micro text-[var(--color-accent)]">
+                <h2 className="text-micro text-[var(--color-accent-dark)]">
                   Technology
                 </h2>
                 <div className="mt-[var(--space-4)] flex flex-wrap gap-[var(--space-2)]">
@@ -177,19 +177,19 @@ export default async function CaseStudyPage({ params }: Params) {
           <Container>
             <div className="flex flex-col gap-[var(--space-6)] border-t border-[var(--color-border)] pt-[var(--space-7)] md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="text-micro text-[var(--color-text-muted)]">
+                <p className="text-micro text-[var(--color-text-muted-accessible)]">
                   Next project
                 </p>
                 <Link
                   href={`/work/${nextProject.slug}`}
                   className="group mt-[var(--space-3)] inline-flex items-baseline gap-[var(--space-3)]"
                 >
-                  <span className="text-project text-[var(--color-text-primary)] transition-colors duration-200 group-hover:text-[var(--color-accent)]">
+                  <span className="text-project text-[var(--color-text-primary)] transition-colors duration-200 group-hover:text-[var(--color-accent-dark)]">
                     {nextProject.title}
                   </span>
                   <span
                     aria-hidden="true"
-                    className="text-[var(--color-accent)] transition-transform duration-200 group-hover:translate-x-1"
+                    className="text-[var(--color-accent-dark)] transition-transform duration-200 group-hover:translate-x-1"
                   >
                     →
                   </span>

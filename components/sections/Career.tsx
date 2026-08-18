@@ -16,10 +16,10 @@ function CareerCard({
   return (
     <div className="flex flex-col rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-bg-surface)] p-[var(--space-6)] shadow-[var(--shadow-soft)] md:p-[var(--space-7)]">
       <div className="flex items-baseline justify-between gap-[var(--space-4)]">
-        <span className="text-micro text-[var(--color-accent)]">
+        <span className="text-micro text-[var(--color-accent-dark)]">
           {column.label}
         </span>
-        <span className="text-micro text-[var(--color-text-muted)]">
+        <span className="text-micro text-[var(--color-text-muted-accessible)]">
           {column.region}
         </span>
       </div>
@@ -55,7 +55,7 @@ export default function Career() {
     <section className="bg-[var(--color-bg-secondary)] py-[var(--space-10)] md:py-[var(--space-12)] lg:py-[var(--space-13)]">
       <Container>
         <div className="max-w-[680px]">
-          <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent)]">
+          <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent-dark)]">
             {career.eyebrow}
           </p>
           <h2 className="text-section text-[var(--color-text-primary)]">

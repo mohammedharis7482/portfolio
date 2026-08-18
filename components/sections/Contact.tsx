@@ -37,7 +37,7 @@ export default function Contact() {
       <Container>
         <div className="grid gap-[var(--space-8)] lg:grid-cols-12 lg:gap-[var(--space-9)]">
           <div className="lg:col-span-5">
-            <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent)]">
+            <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent-dark)]">
               {contact.eyebrow}
             </p>
             <h2 className="text-section text-[var(--color-text-primary)]">
@@ -47,7 +47,7 @@ export default function Contact() {
               {contact.body}
             </p>
 
-            <span className="mt-[var(--space-6)] flex items-center gap-2 text-[14px] text-[var(--color-text-muted)]">
+            <span className="mt-[var(--space-6)] flex items-center gap-2 text-[14px] text-[var(--color-text-muted-accessible)]">
               <span className="h-2 w-2 rounded-full bg-[var(--color-accent)]" />
               {site.availability}
             </span>
@@ -62,7 +62,7 @@ export default function Contact() {
                   key={method.label}
                   className="border-t border-[var(--color-border)] py-[var(--space-5)] first:border-t-0 first:pt-0 last:pb-0 md:py-[var(--space-6)]"
                 >
-                  <p className="text-micro text-[var(--color-text-muted)]">
+                  <p className="text-micro text-[var(--color-text-muted-accessible)]">
                     {method.label}
                   </p>
                   <a
@@ -70,7 +70,7 @@ export default function Contact() {
                     {...(isExternal
                       ? { target: "_blank", rel: "noopener noreferrer" }
                       : {})}
-                    className="group mt-[var(--space-2)] inline-flex items-center gap-[var(--space-3)] text-[17px] leading-[1.5] text-[var(--color-text-primary)] transition-colors duration-200 hover:text-[var(--color-accent)]"
+                    className="group mt-[var(--space-2)] inline-flex items-center gap-[var(--space-3)] text-[17px] leading-[1.5] text-[var(--color-text-primary)] transition-colors duration-200 hover:text-[var(--color-accent-dark)]"
                   >
                     {method.value}
                     <span

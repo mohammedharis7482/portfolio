@@ -16,7 +16,7 @@ export default function MoreWork() {
               className="grid gap-[var(--space-2)] border-t border-[var(--color-border)] py-[var(--space-5)] md:grid-cols-12 md:items-baseline md:gap-[var(--space-5)] md:py-[var(--space-6)]"
             >
               <div className="flex items-baseline gap-[var(--space-3)] md:col-span-4">
-                <span className="text-micro text-[var(--color-text-muted)]">
+                <span className="text-micro text-[var(--color-text-muted-accessible)]">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <h3 className="text-subheading text-[var(--color-text-primary)]">
@@ -26,7 +26,7 @@ export default function MoreWork() {
 
               <p className="text-body md:col-span-5">{project.description}</p>
 
-              <p className="text-micro text-[var(--color-text-muted)] md:col-span-3 md:text-right">
+              <p className="text-micro text-[var(--color-text-muted-accessible)] md:col-span-3 md:text-right">
                 {project.category}
               </p>
             </li>

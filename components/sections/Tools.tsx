@@ -14,7 +14,7 @@ export default function Tools() {
         <div className="mt-[var(--space-9)] grid gap-[var(--space-7)] md:grid-cols-2 lg:mt-[var(--space-10)] lg:grid-cols-3 lg:gap-[var(--space-8)]">
           {tools.map((group) => (
             <div key={group.category}>
-              <p className="text-micro text-[var(--color-text-muted)]">
+              <p className="text-micro text-[var(--color-text-muted-accessible)]">
                 {group.category}
               </p>
               <div className="mt-[var(--space-4)] flex flex-wrap gap-[var(--space-2)]">

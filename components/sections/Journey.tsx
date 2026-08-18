@@ -6,7 +6,7 @@ export default function Journey() {
     <section className="bg-[var(--color-bg-secondary)] py-[var(--space-10)] md:py-[var(--space-12)] lg:py-[var(--space-13)]">
       <Container>
         <div className="max-w-[680px]">
-          <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent)]">
+          <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent-dark)]">
             {journey.eyebrow}
           </p>
           <h2 className="text-section text-[var(--color-text-primary)]">

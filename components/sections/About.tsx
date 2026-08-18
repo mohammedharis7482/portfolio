@@ -28,7 +28,7 @@ export default function About() {
 
           {/* About copy — spec §29 */}
           <div className="lg:col-span-7 lg:pt-[var(--space-4)]">
-            <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent)]">
+            <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent-dark)]">
               {about.eyebrow}
             </p>
             <h2 className="text-section text-[var(--color-text-primary)]">
@@ -56,7 +56,7 @@ export default function About() {
               className="border-t border-[var(--color-border)] pt-[var(--space-5)]"
             >
               <div className="flex items-baseline gap-[var(--space-3)]">
-                <span className="text-micro text-[var(--color-accent)]">
+                <span className="text-micro text-[var(--color-accent-dark)]">
                   {pillar.order}
                 </span>
                 <h3 className="text-subheading text-[var(--color-text-primary)]">

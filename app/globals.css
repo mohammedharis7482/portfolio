@@ -9,6 +9,8 @@
   --color-text-primary: #0b1220;
   --color-text-secondary: #56606f;
   --color-text-muted: #7b8490;
+  /* AA-compliant muted for readable small text (>=4.5:1 on white and soft gray) */
+  --color-text-muted-accessible: #666f7c;
   --color-border: #e2e6e2;
   --color-accent: #08a77a;
   --color-accent-dark: #057a5b;
@@ -41,6 +43,7 @@
   --color-text-primary: var(--color-text-primary);
   --color-text-secondary: var(--color-text-secondary);
   --color-text-muted: var(--color-text-muted);
+  --color-text-muted-accessible: var(--color-text-muted-accessible);
   --color-border: var(--color-border);
   --color-accent: var(--color-accent);
   --color-accent-dark: var(--color-accent-dark);

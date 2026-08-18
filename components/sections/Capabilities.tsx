@@ -9,7 +9,7 @@ export default function Capabilities() {
     >
       <Container>
         <div className="max-w-[680px]">
-          <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent)]">
+          <p className="text-micro mb-[var(--space-4)] text-[var(--color-accent-dark)]">
             {capabilitiesSection.eyebrow}
           </p>
           <h2 className="text-section text-[var(--color-text-primary)]">
@@ -25,7 +25,7 @@ export default function Capabilities() {
               className="grid gap-[var(--space-4)] border-t border-[var(--color-border)] py-[var(--space-6)] first:border-t-0 first:pt-0 last:pb-0 md:grid-cols-12 md:gap-[var(--space-6)] md:py-[var(--space-7)]"
             >
               <div className="flex items-baseline gap-[var(--space-3)] md:col-span-4">
-                <span className="text-micro text-[var(--color-accent)]">
+                <span className="text-micro text-[var(--color-accent-dark)]">
                   {capability.num}
                 </span>
                 <h3 className="text-subheading text-[var(--color-text-primary)]">
@@ -45,7 +45,7 @@ export default function Capabilities() {
                     {index < capability.items.length - 1 && (
                       <span
                         aria-hidden="true"
-                        className="ml-[var(--space-3)] text-[var(--color-text-muted)]"
+                        className="ml-[var(--space-3)] text-[var(--color-text-muted-accessible)]"
                       >
                         ·
                       </span>

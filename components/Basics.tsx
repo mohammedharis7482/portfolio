@@ -24,7 +24,7 @@ export function Divider({ className = "" }: { className?: string }) {
 
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
-    <p className="text-micro text-[var(--color-accent)] mb-4">{children}</p>
+    <p className="text-micro text-[var(--color-accent-dark)] mb-4">{children}</p>
   );
 }
 
@@ -58,7 +58,7 @@ export function SectionHeading({
   return (
     <div className={align === "center" ? "text-center mx-auto max-w-[680px]" : "max-w-[680px]"}>
       {eyebrow && (
-        <p className={`text-micro mb-4 ${dark ? "text-[var(--color-accent)]" : "text-[var(--color-accent)]"}`}>
+        <p className={`text-micro mb-4 ${dark ? "text-[var(--color-accent)]" : "text-[var(--color-accent-dark)]"}`}>
           {eyebrow}
         </p>
       )}
