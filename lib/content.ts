@@ -243,6 +243,11 @@ export const workStyle = [
   { title: "Business Connection", description: "Technology should solve an actual user or business problem." },
 ];
 
+export const experienceSection = {
+  eyebrow: "EXPERIENCE",
+  heading: "Experience",
+};
+
 export type ExperienceItem = {
   role: string;
   company: string;

@@ -7,6 +7,7 @@ import FeaturedCaseStudy from "@/components/sections/FeaturedCaseStudy";
 import MoreWork from "@/components/sections/MoreWork";
 import Journey from "@/components/sections/Journey";
 import HowWeWork from "@/components/sections/HowWeWork";
+import Experience from "@/components/sections/Experience";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <MoreWork />
         <Journey />
         <HowWeWork />
+        <Experience />
       </main>
       <Footer />
     </>
