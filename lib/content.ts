@@ -48,7 +48,7 @@ export type Project = {
   role: string;
   tech: string[];
   liveUrl?: string;
-  images: { src: string; alt: string }[];
+  images: { src: string; alt: string; width: number; height: number }[];
 };
 
 export const featuredProjects: Project[] = [
@@ -64,12 +64,12 @@ export const featuredProjects: Project[] = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Django REST Framework", "PostgreSQL", "PWA"],
     liveUrl: "https://gccacademy.in/",
     images: [
-      { src: "/images/gcc/site-hero.png", alt: "GCC Chalissery Football Academy public homepage" },
-      { src: "/images/gcc/registration.jpeg", alt: "Tournament registration hub" },
-      { src: "/images/gcc/add-players-mobile.jpeg", alt: "Add players mobile flow" },
-      { src: "/images/gcc/matches-admin.jpeg", alt: "Admin matches dashboard" },
-      { src: "/images/gcc/bracket.jpeg", alt: "Knockout bracket view" },
-      { src: "/images/gcc/site-gallery.png", alt: "Academy gallery section" },
+      { src: "/images/gcc/site-hero.png", alt: "GCC Chalissery Football Academy public homepage", width: 3360, height: 1930 },
+      { src: "/images/gcc/registration.jpeg", alt: "Tournament registration hub", width: 2560, height: 1600 },
+      { src: "/images/gcc/add-players-mobile.jpeg", alt: "Add players mobile flow", width: 931, height: 1600 },
+      { src: "/images/gcc/matches-admin.jpeg", alt: "Admin matches dashboard", width: 2560, height: 1600 },
+      { src: "/images/gcc/bracket.jpeg", alt: "Knockout bracket view", width: 2560, height: 1600 },
+      { src: "/images/gcc/site-gallery.png", alt: "Academy gallery section", width: 3360, height: 1926 },
     ],
   },
   {
@@ -83,11 +83,11 @@ export const featuredProjects: Project[] = [
     role: "Product Design • UX Architecture • Frontend • Backend • Database • DevOps",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Django REST Framework", "PostgreSQL", "Docker", "PWA"],
     images: [
-      { src: "/images/nexapos/dashboard.jpeg", alt: "NexaPOS dashboard" },
-      { src: "/images/nexapos/billing.jpeg", alt: "NexaPOS billing screen" },
-      { src: "/images/nexapos/products.jpeg", alt: "NexaPOS product catalogue" },
-      { src: "/images/nexapos/reports.jpeg", alt: "NexaPOS analytics reports" },
-      { src: "/images/nexapos/receipt.jpeg", alt: "NexaPOS receipt output" },
+      { src: "/images/nexapos/dashboard.jpeg", alt: "NexaPOS dashboard", width: 2560, height: 1539 },
+      { src: "/images/nexapos/billing.jpeg", alt: "NexaPOS billing screen", width: 2560, height: 1543 },
+      { src: "/images/nexapos/products.jpeg", alt: "NexaPOS product catalogue", width: 2560, height: 1539 },
+      { src: "/images/nexapos/reports.jpeg", alt: "NexaPOS analytics reports", width: 2560, height: 1537 },
+      { src: "/images/nexapos/receipt.jpeg", alt: "NexaPOS receipt output", width: 2560, height: 1536 },
     ],
   },
   {
@@ -102,10 +102,10 @@ export const featuredProjects: Project[] = [
     tech: ["React Native", "Expo", "Next.js", "TypeScript", "Django REST"],
     liveUrl: "https://propertyflow-ai-omega.vercel.app/",
     images: [
-      { src: "/images/propertyflow/landing.png", alt: "PropertyFlow AI landing page" },
-      { src: "/images/propertyflow/user-dashboard.png", alt: "PropertyFlow AI user dashboard" },
-      { src: "/images/propertyflow/agent-dashboard.png", alt: "PropertyFlow AI agent dashboard" },
-      { src: "/images/propertyflow/admin-dashboard.png", alt: "PropertyFlow AI admin dashboard" },
+      { src: "/images/propertyflow/landing.png", alt: "PropertyFlow AI landing page", width: 3328, height: 1908 },
+      { src: "/images/propertyflow/user-dashboard.png", alt: "PropertyFlow AI user dashboard", width: 3334, height: 1926 },
+      { src: "/images/propertyflow/agent-dashboard.png", alt: "PropertyFlow AI agent dashboard", width: 3330, height: 1922 },
+      { src: "/images/propertyflow/admin-dashboard.png", alt: "PropertyFlow AI admin dashboard", width: 3334, height: 1926 },
     ],
   },
 ];

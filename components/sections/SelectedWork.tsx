@@ -22,8 +22,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               <Image
                 src={cover.src}
                 alt={cover.alt}
-                width={1200}
-                height={800}
+                width={cover.width}
+                height={cover.height}
                 sizes="(min-width: 1024px) 55vw, 100vw"
                 className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
               />

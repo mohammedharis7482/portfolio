@@ -10,6 +10,8 @@ function showcaseImage(src: string) {
     project.images.find((image) => image.src === src) ?? {
       src,
       alt: project.title,
+      width: 2560,
+      height: 1600,
     }
   );
 }
@@ -30,8 +32,8 @@ function Frame({
       <Image
         src={image.src}
         alt={image.alt}
-        width={2560}
-        height={1600}
+        width={image.width}
+        height={image.height}
         sizes={sizes}
         priority={priority}
         className="h-auto w-full"
