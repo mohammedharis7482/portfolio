@@ -2,10 +2,10 @@ import Container from "./Container";
 import { site, footer } from "@/lib/content";
 
 const navigate = [
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
-  { label: "Capabilities", href: "#capabilities" },
-  { label: "Experience", href: "#experience" },
+  { label: "Work", href: "/#work" },
+  { label: "About", href: "/#about" },
+  { label: "Capabilities", href: "/#capabilities" },
+  { label: "Experience", href: "/#experience" },
 ];
 
 const elsewhere = [

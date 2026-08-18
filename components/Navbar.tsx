@@ -28,7 +28,7 @@ export default function Navbar() {
       <Container>
         <div className="flex items-center justify-between h-[76px]">
           <Link
-            href="#"
+            href="/"
             className="flex items-center gap-2 font-semibold text-[var(--color-text-primary)]"
           >
             <span className="hidden sm:inline">{site.name}</span>
@@ -52,7 +52,7 @@ export default function Navbar() {
               <span className="h-2 w-2 rounded-full bg-[var(--color-accent)]" />
               {site.availability}
             </span>
-            <Button href="#contact" variant="dark">
+            <Button href="/#contact" variant="dark">
               Let&apos;s Talk →
             </Button>
           </div>
@@ -90,7 +90,7 @@ export default function Navbar() {
                 <span className="h-2 w-2 rounded-full bg-[var(--color-accent)]" />
                 {site.availability}
               </span>
-              <Button href="#contact" variant="dark" className="w-full mt-1">
+              <Button href="/#contact" variant="dark" className="w-full mt-1">
                 Let&apos;s Talk →
               </Button>
             </div>

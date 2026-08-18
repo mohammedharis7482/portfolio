@@ -79,8 +79,9 @@ Never duplicate copy inline in a component — import from this file. If new rea
 
 ### Experience — confirmed final version (do not alter without explicit instruction)
 1. **UI/UX Mentor** — Softroniics, Palakkad, Kerala — March 2026 – August 2026
-2. **Freelance Product Designer** — Self Employed, Remote (Qatar client) — December 2025 – Present
-3. **UI/UX Designer** — Aspira Design, Bengaluru, Karnataka, India — July 2025 – March 2026 *(combined from two overlapping LinkedIn title entries per explicit user decision — do not split back into UI Designer / UX Designer)*
+2. **Freelance Product Designer** — Self Employed, Remote — Helpdesk Qatar — December 2025 – Present
+3. **UI/UX Design Intern** — Aspira Design, Bengaluru, Karnataka, India — July 2025 – March 2026 *(combined from two overlapping LinkedIn title entries per explicit user decision — do not split back into UI Designer / UX Designer)*
+   Description: "Worked as a UI/UX Design Intern, contributing to interface design, user experience and design system work under guidance from the design team."
 
 ### Real links (confirmed)
 - Email: `mohammedharisar@gmail.com`
@@ -135,7 +136,9 @@ public/images/
 app/
 ├── layout.tsx          — root layout, Inter font import, SEO metadata
 ├── globals.css         — design tokens + type scale (see §3 above)
-└── page.tsx            — homepage, assembles all sections in order
+├── page.tsx            — homepage, assembles all sections in order
+└── work/
+    └── [slug]/page.tsx — DONE: dynamic case study route (3 static params)
 
 components/
 ├── Container.tsx        — max-width wrapper (1320px / 1440px wide)
@@ -143,8 +146,20 @@ components/
 ├── Basics.tsx             — Badge, Tag, Divider, Eyebrow, AvailabilityDot, SectionHeading
 ├── Navbar.tsx             — scroll-aware, mobile menu, "Open to Work" badge, Let's Talk CTA
 ├── Footer.tsx             — dark footer, real social links
-└── sections/
-    └── Hero.tsx           — DONE: uses real GCC + NexaPOS screenshots as hero visual
+└── sections/            — DONE: all 12 homepage sections built
+    ├── Hero.tsx           — uses real GCC + NexaPOS screenshots as hero visual
+    ├── SelectedWork.tsx   — 3 featured project cards (GCC, NexaPOS, PropertyFlow)
+    ├── About.tsx          — portrait + copy + 3 pillars
+    ├── FeaturedCaseStudy.tsx — dark section, GCC Chalissery deep dive
+    ├── MoreWork.tsx       — editorial list, 7 items
+    ├── Journey.tsx        — 5-stage progression
+    ├── HowWeWork.tsx      — 6-stage process + work-style principles
+    ├── Experience.tsx     — 3 entries
+    ├── Capabilities.tsx   — 5 categories as editorial rows
+    ├── Tools.tsx          — technology list by category
+    ├── Career.tsx         — full-time / freelance two-column
+    ├── FreelanceCta.tsx   — dark CTA
+    └── Contact.tsx        — contact links
 
 lib/
 └── content.ts            — all real copy and data (see §4)
@@ -153,22 +168,15 @@ docs/
 └── master-prompt.md      — original 68-section design brief (verbatim, do not edit)
 ```
 
-### Components still to build (in homepage order — see §7)
-- `sections/SelectedWork.tsx` — 3 featured project cards (GCC, NexaPOS, PropertyFlow)
-- `sections/About.tsx` — portrait + copy + pillars
-- `sections/FeaturedCaseStudy.tsx` — dark section, GCC Chalissery deep dive
-- `sections/MoreWork.tsx` — editorial list, 7 items
-- `sections/Journey.tsx` — horizontal stage progression
-- `sections/HowWeWork.tsx` — 6-stage process + work-style principles
-- `sections/Experience.tsx` — 3 entries
-- `sections/Capabilities.tsx` — 5 categories
-- `sections/Tools.tsx` — technology list by category
-- `sections/Career.tsx` — full-time / freelance two-column + freelance dark CTA
-- `sections/Contact.tsx` — contact links
+### Case study pages — built
+`app/work/[slug]/page.tsx` serves one statically generated page per featured project (`/work/gcc-chalissery`, `/work/nexapos`, `/work/propertyflow-ai`); unknown slugs 404.
 
-### Components for case study pages (not started)
-- `app/work/[slug]/page.tsx` — dynamic case study route, 15-section structure per spec §46
-- Needed sub-components: `CaseStudyHero`, `CaseStudyMeta`, `ImageFrame`
+Only the spec §46 sections with real backing data are rendered: Project Hero, Overview, Final Product (visual showcase), Technology/role meta, live-site CTA where a URL exists, Next Project. **Problem, Research, Strategy, User Flow, Wireframes, Design System, Architecture, Challenges, Solutions, Outcome and Learnings are deliberately omitted** — there is no real content for them, and §46 permits sections to vary. Do not add them with invented copy.
+
+`ImageFrame` lives inside the route file; no separate `CaseStudyHero` / `CaseStudyMeta` components were needed.
+
+### Nav anchors
+Navbar and Footer link with homepage-qualified anchors (`/#work`, not `#work`) so they resolve from case study subpages. Keep new nav links in that form. In-page CTAs inside homepage-only sections (Hero, Career, FreelanceCta) may stay bare.
 
 ---
 
@@ -177,19 +185,19 @@ docs/
 ```
 Navigation
 Hero                                          [DONE]
-Selected Work (GCC -> NexaPOS -> PropertyFlow) [ ]
-About ("More than a designer...")             [ ]
-Design / Engineering / Product (pillars)      [ ]
-Featured Case Study (GCC, dark section)       [ ]
-More Work (MathBot, Odrowita, Maison Elève..) [ ]
-My Journey                                    [ ]
-How I Work                                    [ ]
-Experience                                    [ ]
-Capabilities                                  [ ]
-Tools / Technology                            [ ]
-Open to Opportunities (Full-time / Freelance) [ ]
-Freelance CTA (dark)                          [ ]
-Contact                                       [ ]
+Selected Work (GCC -> NexaPOS -> PropertyFlow) [DONE]
+About ("More than a designer...")             [DONE]
+Design / Engineering / Product (pillars)      [DONE]
+Featured Case Study (GCC, dark section)       [DONE]
+More Work (MathBot, Odrowita, Maison Elève..) [DONE]
+My Journey                                    [DONE]
+How I Work                                    [DONE]
+Experience                                    [DONE]
+Capabilities                                  [DONE]
+Tools / Technology                            [DONE]
+Open to Opportunities (Full-time / Freelance) [DONE]
+Freelance CTA (dark)                          [DONE]
+Contact                                       [DONE]
 Footer                                        [DONE]
 ```
 
@@ -202,6 +210,7 @@ Section background rhythm (spec §59): Light -> White -> Soft Gray -> Dark -> Wh
 - **Resume file** — not built yet. When built, update `site.links.resume` in `lib/content.ts` to point to the real file, and update the "View Resume" CTA in the Career section.
 - **NexaPOS live URL** — none yet. Do not add a live-site link for this project.
 - **More Work screenshots** — none yet for the 7 secondary projects. Keep that section text-only until assets arrive.
+- **Case study depth** — the 3 case study pages are built, but carry only hero/overview/visuals/tech. Problem, research, strategy, challenges and outcome sections stay omitted until real material exists for them.
 - Do not invent client names, user counts, revenue figures, or awards anywhere on the site.
 
 ---
