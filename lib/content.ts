@@ -110,6 +110,28 @@ export const featuredProjects: Project[] = [
   },
 ];
 
+export const caseStudy = {
+  eyebrow: "FEATURED CASE STUDY",
+  labels: {
+    project: "PROJECT",
+    role: "ROLE",
+    interfaces: "INTERFACES",
+  },
+  interfaces: [
+    "Registration",
+    "Player management",
+    "Tournament dashboard",
+    "Fixtures",
+    "Knockout bracket",
+    "Admin",
+  ],
+  // Paths resolve against featuredProjects[0].images so alt text is not duplicated
+  showcase: {
+    large: "/images/gcc/matches-admin.jpeg",
+    small: ["/images/gcc/registration.jpeg", "/images/gcc/bracket.jpeg"],
+  },
+};
+
 export const moreProjects = [
   {
     category: "EDTECH • AI • FULL-STACK",
